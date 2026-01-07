@@ -253,42 +253,7 @@ a[x-apple-data-detectors],
 </style>
  </head>
  <body class="body" style="width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
-   <!-- View Toggle -->
-   <style>
-   .view-toggle-bar{position:fixed;top:0;left:0;right:0;z-index:9999;background:linear-gradient(135deg,#1a1a2e,#16213e);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,.3);font-family:'Raleway',sans-serif}
-   .toggle-label{color:#fff;font-size:14px;font-weight:600;margin-right:12px}
-   .view-toggle-btn{padding:10px 24px;border:none;border-radius:25px;font-size:14px;font-weight:600;cursor:pointer;transition:all .3s;display:flex;align-items:center;gap:8px}
-   .view-toggle-btn.active{background:linear-gradient(135deg,#15a8f5,#0d8bd9);color:#fff;box-shadow:0 4px 15px rgba(21,168,245,.4)}
-   .view-toggle-btn:not(.active){background:rgba(255,255,255,.1);color:rgba(255,255,255,.7)}
-   .view-toggle-btn:not(.active):hover{background:rgba(255,255,255,.2);color:#fff}
-   .view-toggle-btn svg{width:18px;height:18px}
-   .email-content-wrapper{padding-top:60px;transition:all .4s}
-   body.mobile-view .email-content-wrapper{display:flex;justify-content:center;align-items:flex-start;min-height:calc(100vh - 60px);background:linear-gradient(135deg,#667eea,#764ba2);padding:30px 20px}
-   body.mobile-view .mobile-device-frame{display:block!important;width:375px;max-width:100%;background:#000;border-radius:40px;padding:12px;box-shadow:0 25px 80px rgba(0,0,0,.4)}
-   body.mobile-view .mobile-device-screen{background:#fff;border-radius:30px;overflow:hidden;position:relative}
-   body.mobile-view .mobile-device-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:150px;height:30px;background:#000;border-radius:0 0 20px 20px;z-index:10}
-   body.mobile-view .mobile-device-content{max-height:700px;overflow-y:auto}
-   body.mobile-view .desktop-content{display:none!important}
-   body:not(.mobile-view) .mobile-device-frame{display:none!important}
-   body.mobile-view .es-wrapper-color,body.mobile-view .es-header-body,body.mobile-view .es-content-body{width:100%!important;max-width:100%!important}
-   body.mobile-view .mobile-device-content p,body.mobile-view .mobile-device-content a{font-size:14px!important;line-height:170%!important}
-   body.mobile-view .mobile-device-content h1{font-size:20px!important;text-align:center!important}
-   body.mobile-view .mobile-device-content h2{font-size:18px!important;text-align:center!important}
-   body.mobile-view .es-left,body.mobile-view .es-right{width:100%!important;float:none!important}
-   body.mobile-view .adapt-img{width:100%!important;height:auto!important}
-   body.mobile-view .es-social img{width:30px!important;height:30px!important}
-   body.mobile-view .es-content:first-of-type .adapt-img{width:75%!important;height:auto!important;margin:0 auto!important;display:block!important}
-   </style>
-   <div class="view-toggle-bar">
-     <span class="toggle-label">Preview:</span>
-     <button class="view-toggle-btn active" id="desktopBtn" onclick="setView('desktop')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Desktop</button>
-     <button class="view-toggle-btn" id="mobileBtn" onclick="setView('mobile')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>Mobile</button>
-   </div>
-   <div class="email-content-wrapper">
-     <div class="mobile-device-frame"><div class="mobile-device-screen"><div class="mobile-device-notch"></div><div class="mobile-device-content" id="mobileContent"></div></div></div>
-     <div class="desktop-content" id="desktopContent">
-   <script>function setView(m){var b=document.body,d=document.getElementById('desktopBtn'),mb=document.getElementById('mobileBtn'),dc=document.getElementById('desktopContent'),mc=document.getElementById('mobileContent');if(m==='mobile'){b.classList.add('mobile-view');d.classList.remove('active');mb.classList.add('active');mc.innerHTML=dc.innerHTML}else{b.classList.remove('mobile-view');d.classList.add('active');mb.classList.remove('active')}}</script>
-  <div dir="ltr" class="es-wrapper-color" lang="en" style="background-color:#D8D8D8"><!--[if gte mso 9]>
+   <div dir="ltr" class="es-wrapper-color" lang="en" style="background-color:#D8D8D8"><!--[if gte mso 9]>
  <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
    <v:fill type="tile"  color="#d8d8d8" origin="0.5, 0" position="0.5, 0"></v:fill>
  </v:background>
@@ -783,7 +748,6 @@ a[x-apple-data-detectors],
      </tr>
    </table>
   </div>
-     </div><!-- end desktop-content -->
-   </div><!-- end email-content-wrapper -->
+
  </body>
 </html>
